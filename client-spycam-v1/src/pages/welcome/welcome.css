@@ -1,0 +1,15 @@
+.welcome-body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.welcome-page {
+   background: #131313; 
+}
+
+.welcome-logo {
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+}
