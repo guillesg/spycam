@@ -3,7 +3,7 @@ const passport = require('passport');
 
 const PlaceService = require('../services/place.service');
 const validatorHandler = require('../middlewares/validator.handler')
-const { createPlaceSchema, updatePlaceSchema, getPlaceSchema } = require('../schema/place.schema')
+const { createPlaceSchema, updatePlaceSchema, getPlaceSchema, getPlaceByOwnerSchema } = require('../schema/place.schema')
 
 const router = express.Router();
 const service = new PlaceService;

@@ -11,7 +11,7 @@ app.use(express.json());
 // app.use(helmet())
 app.use(morgan('dev'))
 
-// const whitelist = ['http://localhost:8080', 'https://myapp.co'];
+// const whitelist = ['http://localhost:3000', 'http://localhost:19000'];
 // const options = {
 //   origin: (origin, callback) => {
 //     if (whitelist.includes(origin) || !origin) {
@@ -22,9 +22,9 @@ app.use(morgan('dev'))
 //   }
 // }
 
-routerApi(app)
+app.use(cors('*'))
 
-app.use(cors())
+routerApi(app)
 
 require('./utils/auth/index')
 

@@ -35,6 +35,10 @@ router.post('/',
   async (req, res, next) => {
     try {
       const data = req.body
+      const user = { ...data,}
+      if (data.password === data.confirmPassword) {
+
+      }
       const newUser = await service.create(data)
       res.status(201).json(newUser)
     } catch (error) {

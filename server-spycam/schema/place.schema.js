@@ -17,4 +17,8 @@ const getPlaceSchema = Joi.object({
   id: id.required(),
 })
 
-module.exports = { createPlaceSchema, updatePlaceSchema, getPlaceSchema }
+const getPlaceByOwnerSchema = Joi.object({
+  userId: userId.required(),
+})
+
+module.exports = { createPlaceSchema, updatePlaceSchema, getPlaceSchema, getPlaceByOwnerSchema }

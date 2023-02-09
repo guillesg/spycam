@@ -1,0 +1,45 @@
+.burger {
+    margin: 10px 0 20px 10px;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(200, 196, 196);
+    background-color: #282828;
+}
+
+.list-container {
+    height: 85vh;
+    width: 15%;
+    border-right: 1px solid black;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.list {
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.title-list {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.list li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.list li a {
+    text-decoration: none;
+    color: rgb(200, 196, 196);
+}
+
+.button {
+    margin: 0 auto;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(200, 196, 196);
+    background-color: #282828;
+}

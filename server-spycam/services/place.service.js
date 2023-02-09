@@ -16,7 +16,9 @@ class PlaceService {
   }
 
   async findOne(id) {
-    const place = await models.Place.findByPk(id)
+    const place = await models.Place.findByPk(id, {
+      include: 'camera'
+    })
 
     if (!place) {
       throw boom.notFound("Place not found")
@@ -30,6 +32,14 @@ class PlaceService {
     const placeUpdated = place.update(changes)
 
     return placeUpdated
+  }
+
+  async findByFk(fk) {
+    const places = await models.Place.findAll({
+      where: {userId: fk }
+    })
+
+    return places
   }
 
   async delete(id) {

@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useState} from 'react'
-import { ApiDelivery } from '../Data/sources/remote/api/ApiDelivery'
+import { Api } from '../Data/sources/remote/api/Api'
 
 const RegisterViewModel = () => {
 
@@ -15,7 +15,7 @@ const RegisterViewModel = () => {
 
     const register = async () => {
         try {
-            const response = await ApiDelivery.post('/users', values)
+            const response = await Api.get('/users')
             console.log('RESPONSE: ' + JSON.stringify(response))
         } catch (error) {
             console.log(error)
@@ -35,7 +35,3 @@ const RegisterViewModel = () => {
 }
 
 export default RegisterViewModel
-
-const styles = StyleSheet.create({
-
-})

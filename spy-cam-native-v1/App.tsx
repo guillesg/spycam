@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Intro from './src/views/Intro'
-import Auth from './src/views/Auth'
+import Auth from './src/views/auth/Auth'
 import Register from './src/views/Register'
 
 export type RootStackParamsList = {

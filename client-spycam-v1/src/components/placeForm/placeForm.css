@@ -1,0 +1,25 @@
+.form-place-container { 
+    padding: 20px 10px;
+    
+}
+
+.form-place-title {
+    display: flex;
+    justify-content: center;
+}
+
+.form-place {
+    display: flex;
+    justify-content: center;
+}
+
+.form-place-input {
+    width: 460%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.form-place-button {
+    margin-left: 10%;
+    border-radius: 10px;
+}
